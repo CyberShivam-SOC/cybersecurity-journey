@@ -1,0 +1,21 @@
+# Day 1: Securing Accounts (CS50 Cybersecurity)
+
+## Core Concepts Learned:
+- **Authentication vs. Authorization:** 
+  - *Authentication:* Proving *who* you are (e.g., using a username and password).
+  - *Authorization:* Determining *what* you are allowed to access once authenticated.
+- **The Mathematics of Passwords & Brute Force:**
+  - 4-digit numeric pins have only 10,000 possibilities and can be cracked by a script in milliseconds.
+  - Adding letters, casing, and punctuation exponentially increases the keyspace (e.g., 94 characters to the 8th power creates quadrillions of combinations), raising the "cost" and time required for an attacker.
+
+## Common Cyber Attacks:
+- **Dictionary Attacks:** Using a predefined list of actual words to guess passwords quickly.
+- **Credential Stuffing:** Reusing compromised passwords across multiple websites; if one site leaks, attackers test those credentials everywhere.
+- **Phishing & Social Engineering:** Tricked humans giving up sensitive data through fake login pages, fraudulent emails, or manipulation.
+- **Keylogging:** Malware recording keystrokes to steal passwords and 2FA tokens.
+
+## Defensive Best Practices (NIST Guidelines):
+- **Length & Complexity:** Passwords should be at least 8 characters long, but ideally much longer (up to 64 characters or passphrases). Avoid dictionary words, sequential strings (1234, abcd), and personal info (pet names).
+- **Multi-Factor Authentication (MFA / 2FA):** Combining a *knowledge factor* (password) with a *possession factor* (app/key fob) or *inherence* (biometrics). Avoid SMS-based 2FA where possible due to SIM-swapping risks.
+- **Password Managers:** Essential for generating and storing unique, complex passwords for every site, protecting against credential stuffing and alerting you to phishing URLs.
+- **Rate Limiting:** Systems locking out accounts after multiple failed attempts to slow down brute-force attacks.ZS
